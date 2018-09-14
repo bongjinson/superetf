@@ -1,4 +1,4 @@
-{% block content %}
+<!-- {% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
@@ -8,4 +8,18 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock %}
+{% endblock %}-->
+<html>
+<head>
+    <title>super ETF</title>
+</head>
+<body>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
